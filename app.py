@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-from book_prod import load_data, recommend_books
+from etl import load_data
+from book_prod import recommend_books
 
 st.set_page_config(
     page_title="Book Recommendation Engine",

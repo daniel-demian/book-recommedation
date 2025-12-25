@@ -3,14 +3,14 @@ import pandas as pd
 def extract_ratings(path: str) -> pd.DataFrame:
     """Extract ratings CSV into DataFrame"""
     dtype = {"User-ID": int, "ISBN": str, "Book-Rating": int}
-    df = pd.read_csv(path, sep=';', encoding='cp1251', dtype=dtype, on_bad_lines='skip', low_memory=False)
+    df = pd.read_csv(path, sep=',', encoding='cp1251', dtype=dtype, on_bad_lines='skip', low_memory=False)
     return df
 
 def extract_books(path: str) -> pd.DataFrame:
     """Extract books CSV into DataFrame"""
     dtype = {"ISBN": str, "Book-Title": str, "Book-Author": str, 
              "Year-Of-Publication": str, "Publisher": str}
-    df = pd.read_csv(path, sep=';', encoding='cp1251', dtype=dtype, on_bad_lines='skip', low_memory=False)
+    df = pd.read_csv(path, sep=',', encoding='cp1251', dtype=dtype, on_bad_lines='skip', low_memory=False)
     return df
 
 def transform_ratings(df: pd.DataFrame) -> pd.DataFrame:

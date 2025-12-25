@@ -8,7 +8,7 @@ https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset
 After downloading, place the following files into the data/ directory:
 
 data/
-- Book-Ratings.csv
+- Ratings.csv
 - Books.csv
 
 

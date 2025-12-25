@@ -13,8 +13,8 @@ st.title("📚 Book Recommendation Engine")
 @st.cache_data(show_spinner=True)
 def get_dataset():
     return load_data(
-        "data/BX-Book-Ratings.csv",
-        "data/BX-Books.csv"
+        "data/Ratings.csv",
+        "data/Books.csv"
     )
 
 dataset = get_dataset()

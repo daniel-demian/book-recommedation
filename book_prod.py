@@ -55,7 +55,7 @@ def recommend_books(dataset: pd.DataFrame, book_title: str, min_ratings: int = 8
 # -------------------------------
 
 if __name__ == "__main__":
-    dataset = load_data('./data/BX-Book-Ratings.csv', './data/BX-Books.csv')
+    dataset = load_data('./data/Ratings.csv', './data/Books.csv')
     
     #the fellowship of the ring (the lord of the rings, part 1)
 

@@ -4,7 +4,7 @@ from etl import load_data
 from book_prod import recommend_books
 
 st.set_page_config(
-    page_title="Book Recommendation Engine",
+    page_title="Book Recommendation",
     layout="centered"
 )
 

@@ -8,7 +8,7 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("📚 Book Recommendation Engine")
+st.title("📚 Book Recommendation")
 
 @st.cache_data(show_spinner=True)
 def get_dataset():
